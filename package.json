@@ -1,0 +1,26 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "a practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kobehht/blog.git"
+  },
+  "keywords": [
+    "kobe123hht"
+  ],
+  "author": "hht",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kobehht/blog/issues"
+  },
+  "homepage": "https://github.com/kobehht/blog#readme",
+  "dependencies": {
+    "config-lite": "^1.5.0",
+    "express": "^4.14.0"
+  }
+}
