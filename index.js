@@ -1,4 +1,5 @@
 var path = require('path');
+var flash = require('connect-flash');
 var express = require('express');
 var routes = require('./routes');
 var config = require('config-lite');
@@ -10,6 +11,8 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 app.use(express.static(path.join(__dirname, 'public')));
+
+app.use(flash());
 
 app.locals.blog = {
     title: pkg.name,

@@ -1,0 +1,28 @@
+<%- include('header') %>
+<link rel="stylesheet" href="/css/signin.css">
+
+<div class="login_container">
+    <div class="container login_controller">
+        <h2 class="login_title">User Login</h2>
+        <form class="form-horizontal" role="form">
+            <input type="text" class="form-control" placeholder="Username">
+            <input type="password" class="form-control" placeholder="Password">
+            <div style="height: 27px; margin-bottom: 15px">
+                <div class="checkbox rememberme">
+                    <label>
+                        <input type="checkbox"> Remember me
+                    </label>
+                </div>
+                <div class="forgotpassword">
+                    <a href="#">Forgot password?</a>
+                </div>
+            </div>
+            <button type="button" class="btn btn-lg btn-primary btn-block" id="login_button">Login</button>
+            <div class="link_to_register">
+                <a href="/signup">Do not have an account?</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+<%- include('footer') %>

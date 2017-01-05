@@ -1,0 +1,20 @@
+<%- include('header') %>
+<link rel="stylesheet" href="/css/signup.css">
+
+<div class="register_container">
+    <div class="container register_controller">
+        <h2 class="register_title">Regist an account</h2>
+        <div class="form_horizontal" role="form">
+            <input type="text" class="form-control" name="username" placeholder="Pick a username">
+            <input type="password" class="form-control" name="password" placeholder="Create a password">
+            <input type="password" class="form-control" name="repassword" placeholder="Confirm the password">
+            <input type="email" class="form-control" name="email" placeholder="Your email address">
+            <button type="button" class="btn btn-lg btn-primary btn-block" id="register_button">Regist</button>
+            <div class="link_to_login">
+                <a href="/signin">Already have an account?</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%- include('footer') %>
