@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    border-radius: 0;
+}
+
+.navbar_container {
+    margin: 0;
+    padding-right: 30px;
+    width: auto;
+}
+
+.navbar-brand {
+    font-weight: 700;
+}
+
+.fp-tableCell {
+    text-align: center;
+}
+
+.page1_title {
+    cursor: default;
+}
