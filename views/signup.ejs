@@ -1,20 +1,36 @@
 <%- include('header') %>
 <link rel="stylesheet" href="/css/signup.css">
+<script src="/js/signup.js" charset="utf-8"></script>
 
 <div class="register_container">
     <div class="container register_controller">
         <h2 class="register_title">Regist an account</h2>
         <div class="form_horizontal" role="form">
-            <input type="text" class="form-control" name="username" placeholder="Pick a username">
-            <input type="password" class="form-control" name="password" placeholder="Create a password">
-            <input type="password" class="form-control" name="repassword" placeholder="Confirm the password">
-            <input type="email" class="form-control" name="email" placeholder="Your email address">
-            <button type="button" class="btn btn-lg btn-primary btn-block" id="register_button">Regist</button>
+            <div class="form-group">
+                <input type="text" class="form-control" name="username" placeholder="Pick a username">
+                <label class="control-label">Username length should be 3 to 10</label>
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" name="password" placeholder="Create a password">
+                <label class="control-label">Password length is at least 6</label>
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" name="repassword" placeholder="Confirm the password">
+                <label class="control-label">Twice the input of the password is not the same</label>
+            </div>
+            <div class="form-group">
+                <input type="email" class="form-control" name="email" placeholder="Your email address">
+                <label class="control-label">E-mail format is incorrect</label>
+            </div>
+            <input type="submit" class="btn btn-lg btn-primary btn-block" id="register_button" value="Regist">
             <div class="link_to_login">
                 <a href="/signin">Already have an account?</a>
             </div>
         </div>
     </div>
 </div>
+
+<!-- 弹出消息 -->
+<%- include('components/notification') %>
 
 <%- include('footer') %>

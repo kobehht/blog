@@ -8,6 +8,7 @@ module.exports = {
     },
 
     checkNotLogin: function checkNotLogin(req, res, next) {
+        // console.log('[debug]checkNotLogin');
         if (req.session.user) {
             req.flash('error', '已登录');
             return res.redirect('back');

@@ -7,10 +7,10 @@ module.exports = function (app) {
     app.use('/main', require('./main'));
     app.use('/signin', require('./signin'));
     app.use('/signup', require('./signup'));
-    
+
     // 404页面
     app.use(function (req, res) {
-        if (!res.headerSent) {
+        if (!res.headersSent) {
             res.render('404');
         }
     });
