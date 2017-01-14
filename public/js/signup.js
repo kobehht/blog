@@ -1,7 +1,7 @@
 $(function () {
     var formValue = {};
     // 当表单键入内容时验证输入内容
-    $('.form_horizontal input').on('keyup change', function () {
+    $('.form_horizontal input').on('keyup change blur', function () {
         var $parent = $(this).parent();
         var $next = $(this).next();
 
@@ -59,21 +59,8 @@ $(function () {
     $('#register_button').click(function () {
         console.log(formValue);
         $.post('/signup', formValue, function (data) {
-            if (data == 'error') {
-                window.location = '/signup';
-            }
-            if (data == 'success') {
-                window.location = '/main';
-            }
+            console.log(data);
+            window.location = data.redirect;
         });
-        // $.ajax({
-        //     url: '/signup',
-        //     type: 'post',
-        //     contentType: 'application/json',
-        //     data: JSON.stringify(formValue),
-        //     success: function () {
-        //         console.log('[debug]signup post success');
-        //     }
-        // });
     });
 });

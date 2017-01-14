@@ -7,6 +7,8 @@ module.exports = function (app) {
     app.use('/main', require('./main'));
     app.use('/signin', require('./signin'));
     app.use('/signup', require('./signup'));
+    app.use('/user', require('./user'));
+    app.use('/signout',require('./signout'));
 
     // 404页面
     app.use(function (req, res) {

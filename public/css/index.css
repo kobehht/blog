@@ -2,6 +2,10 @@ body {
     margin: 0;
     padding: 0;
 }
+.nav-position {
+    height: 51px;
+    width: auto;
+}
 
 .navbar {
     border-radius: 0;
