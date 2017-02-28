@@ -1,7 +1,7 @@
 $(function () {
     var formValue = {};
     // 当表单键入内容时验证输入内容
-    $('.form_horizontal input').on('keyup change blur', function () {
+    $('.form-horizontal input').on('keyup change blur', function () {
         var $parent = $(this).parent();
         var $next = $(this).next();
 
@@ -15,6 +15,8 @@ $(function () {
         // 输入不符合要求的显示
         function isIncorrect() {
             $next.css('display', 'block');
+            $next.css('text-align', 'left');
+            $next.css('margin-left', '16px');
             $parent.addClass('has-error');
             $parent.removeClass('has-success');
         }

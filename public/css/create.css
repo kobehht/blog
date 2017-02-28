@@ -1,0 +1,33 @@
+.create_container {
+    position: absolute;
+    /*align-items: center;*/
+    width: 100%;
+    height: 80%;
+}
+
+.create_controller {
+    position: relative;
+    top: 200px;
+    width: 400px;
+    border: 1.5px solid #bbb;
+    border-radius: 10px;
+}
+
+.form-control {
+    height: 40px;
+    width: 370px;
+    margin: auto;
+}
+
+.form-group label {
+    margin-left: 16px;
+    margin-top: 10px;
+}
+
+#post_content {
+    resize: none;
+}
+
+#create_button {
+    margin-bottom: 15px;
+}

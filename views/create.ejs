@@ -1,0 +1,20 @@
+<%- include('header') %>
+<link rel="stylesheet" href="/css/create.css">
+<script src="/js/create.js" charset="utf-8"></script>
+
+<div class="create_container">
+    <div class="container create_controller">
+        <div class="form-horizontal" role="form">
+            <div class="form-group">
+                <label for="post_title">Title</label>
+                <input type="text" name="title" class="form-control" id="post_title">
+            </div>
+            <div class="form-group">
+                <label for="post_content">Content</label>
+                <textarea name="content" class="form-control" id="post_content" rows="10"></textarea>
+            </div>
+            <input type="submit" class="btn btn-lg btn-primary btn-block" id="create_button" value="Create">
+        </div>
+    </div>
+</div>
+<%- include('footer') %>

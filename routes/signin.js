@@ -31,7 +31,7 @@ router.post('/', checkNotLogin, urlencodedParser, function (req, res, next) {
             console.log('[debug] login success');
             delete user.password;
             req.session.user = user;
-            res.send({redirect: '/main'});
+            res.send({redirect: '/user'});
         })
         .catch(next);
 });
